@@ -16,7 +16,7 @@
   </div>
   <a-carousel autoplay>
     <div>
-      <img class="myImage" src='http://localhost:8080/img/91ck.5beb0108.jpg' />
+      <img class="myImage" src='http://hkwba5f82.pic17.websiteonline.cn/upload/91ck.jpg' />
     </div>
     <div>
       <img src="http://hkwba5f82.pic17.websiteonline.cn/upload/IMG_1818.JPG" />
@@ -105,19 +105,29 @@
 
       <!--详情展示三个-->
       <div class="oneVideoShowDiv">
-       <img src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg"/>
-       <span>标题</span>
+        <img
+          src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg" />
+        <span>标题</span>
       </div>
       <div class="twoVideoShowDiv">
-        <img src="https://static.wixstatic.com/media/b6108b_4057e259eac04ba8a3ad510b02c55a86~mv2.jpeg/v1/crop/x_17,y_68,w_3199,h_1834/fill/w_374,h_216,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/Screenshot%202024-06-28%20at%2014_14_39.jpeg"/>
+        <img
+          src="https://static.wixstatic.com/media/b6108b_4057e259eac04ba8a3ad510b02c55a86~mv2.jpeg/v1/crop/x_17,y_68,w_3199,h_1834/fill/w_374,h_216,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/Screenshot%202024-06-28%20at%2014_14_39.jpeg" />
         <span>标题</span>
       </div>
       <div class="threeVideoShowDiv">
-        <img src="https://static.wixstatic.com/media/b6108b_3a93f0e7cc4c4f9d8b680b3cdfed309f~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/EYE%20-%20iPhone.jpg"/>
+        <img
+          src="https://static.wixstatic.com/media/b6108b_3a93f0e7cc4c4f9d8b680b3cdfed309f~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/EYE%20-%20iPhone.jpg" />
         <span>标题</span>
       </div>
     </div>
- 
+    <!--合作伙伴 -->
+    <div class="partnerDiv">
+      <div class="caseTitle">
+        <p>COOPERATIVE PARTNER</p>
+        <h1>合作伙伴</h1>
+      </div>
+      
+    </div>
     <!--联系我们-->
     <div class="aboutDiv">
       <p style="margin-top: 100px;">联系我们---模块区域</p>
@@ -142,7 +152,7 @@ export default defineComponent({
         sources: [
           {
             //src: require("@/assets/mp4/kouhong.mp4"),
-            src:"https://video.wixstatic.com/video/b6108b_7e9ce484f7784fdcaccb7335e7390e97/1080p/mp4/file.mp4",
+            src: "https://video.wixstatic.com/video/b6108b_7e9ce484f7784fdcaccb7335e7390e97/1080p/mp4/file.mp4",
             type: 'video/mp4',
           }
         ],
@@ -206,19 +216,22 @@ export default defineComponent({
   margin-left: 200px;
   margin-top: 50px;
 }
-.threeVideoShowDiv:hover{
+
+.threeVideoShowDiv:hover {
   z-index: 4;
   cursor: pointer;
   border: 1px solid #ffffff;
   box-shadow: 2px 2px 15px 10px rgba(255, 255, 255, 0.5);
 }
-.oneVideoShowDiv:hover{
+
+.oneVideoShowDiv:hover {
   z-index: 4;
   cursor: pointer;
   border: 1px solid #ffffff;
   box-shadow: 2px 2px 15px 10px rgba(255, 255, 255, 0.5);
 }
-.twoVideoShowDiv:hover{
+
+.twoVideoShowDiv:hover {
   cursor: pointer;
   border: 1px solid #ffffff;
   box-shadow: 2px 2px 15px 10px rgba(255, 255, 255, 0.5);
@@ -321,7 +334,17 @@ export default defineComponent({
   float: left;
   background-color: black;
 }
-.aboutDiv{
+
+.partnerDiv {
+  color: white;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  float: left;
+  background-color: black;
+}
+
+.aboutDiv {
   color: white;
   position: relative;
   height: 200px;
@@ -329,6 +352,7 @@ export default defineComponent({
   float: left;
   background-color: #2d322d;
 }
+
 .caseContentImg:hover {
   cursor: pointer;
   border: 1px solid #ffffff;
