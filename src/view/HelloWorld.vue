@@ -1,15 +1,5 @@
 <template>
-  <div class="menuDiv">
-    <ul>
-      <li class="homePageLi">首页
-      </li>
-      <li class="photoPageLi">照片案例
-      </li>
-      <li>视频案例</li>
-      <li>关于我们</li>
-      <li>联系我们</li>
-    </ul>
-  </div>
+  <headIndex></headIndex>
   <div class="infoDiv">
     <!-- <h1>PERSONAL PHOTOGRAPHER</h1> -->
     <h2
@@ -301,12 +291,12 @@
 import { onMounted, onUnmounted, ref, defineComponent } from "vue";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
-import { PhoneOutlined } from "@ant-design/icons-vue";
 import { useRouter } from "vue-router";
+import headIndex from "@/view/head/index.vue"
 
 export default defineComponent({
   name: "HelloWorld",
-  components: { PhoneOutlined },
+  components: {headIndex},
   setup() {
     const router = useRouter();
 
@@ -390,12 +380,6 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-
-.photoPageLi:hover{
-  cursor: pointer;
-  color: black;
-}
-
 .icons-list {
   margin-top: 80px;
 }
@@ -507,13 +491,6 @@ export default defineComponent({
   height: 100%;
 }
 
-.menuDiv {
-  z-index: 2;
-  float: left;
-  position: absolute;
-  top: 55px;
-  right: 20%;
-}
 
 .infoDiv {
   z-index: 2;
@@ -525,12 +502,6 @@ export default defineComponent({
   text-align: left;
 }
 
-.menuDiv li {
-  display: inline;
-  color: white;
-  font-size: 15px;
-  padding-left: 100px;
-}
 
 .caseTitle {
   margin-top: 50px;
