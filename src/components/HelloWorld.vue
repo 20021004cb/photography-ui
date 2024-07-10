@@ -1,8 +1,10 @@
 <template>
   <div class="menuDiv">
     <ul>
-      <li class="homePageLi">首页</li>
-      <li class="photoPageLi" @click="openPhotoView">照片案例</li>
+      <li class="homePageLi">首页
+      </li>
+      <li class="photoPageLi">照片案例
+      </li>
       <li>视频案例</li>
       <li>关于我们</li>
       <li>联系我们</li>
@@ -237,19 +239,19 @@
           >
             <li class="ulDomLi" v-for="item in 2" :key="item">
               <img
-                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.b6LEyTzY78K4cQKDlv7ZawHaHk?rs=1&pid=ImgDetMain"
+                src="@/assets/bydlogo.png"
               />
               <img
-                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.b6LEyTzY78K4cQKDlv7ZawHaHk?rs=1&pid=ImgDetMain"
+              src="@/assets/xbk.png"
               />
               <img
-                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.b6LEyTzY78K4cQKDlv7ZawHaHk?rs=1&pid=ImgDetMain"
+             src="@/assets/ad.png"
               />
               <img
-                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.b6LEyTzY78K4cQKDlv7ZawHaHk?rs=1&pid=ImgDetMain"
+              src="@/assets/bylogo.png"
               />
               <img
-                src="https://tse1-mm.cn.bing.net/th/id/OIP-C.b6LEyTzY78K4cQKDlv7ZawHaHk?rs=1&pid=ImgDetMain"
+              src="@/assets/bydlogo.png"
               />
             </li>
           </ul>
@@ -337,13 +339,15 @@ export default defineComponent({
         if (position <= -(ulWidth / 2)) {
           position = 0;
         }
-        ulDom.value.style.transform = `translateX(${position}px)`;
+        ulDom.value.style.transform = 'translateX('+position+'px)';
         animationId = requestAnimationFrame(animate);
       };
       animate();
     };
 
     onMounted(() => {
+      animation();
+
       myPlayer.value = videojs(
         videoPlayer.value,
         {
@@ -367,7 +371,7 @@ export default defineComponent({
         }
       );
 
-      animation();
+    
     });
 
     onUnmounted(() => {
@@ -381,8 +385,6 @@ export default defineComponent({
       pause,
       resume,
       animation,
-      openPhotoView,
-      router,
     };
   },
 });
@@ -425,9 +427,11 @@ export default defineComponent({
     list-style: none;
     display: flex;
     & > img {
-      width: 200px;
-      height: 100%;
-      margin-right: 10px;
+      width: 130px;
+            height: 100px;
+            margin-top: 30px;
+            /* height: 100%; */
+            margin-right: 70px;
     }
   }
 }
