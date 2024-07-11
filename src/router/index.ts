@@ -16,6 +16,11 @@ export const routes: Array<RouteRecordRaw> = [
         path: "/VideoContents",
         name: "VideoContents",
         component: () =>import("@/view/videoContents/Videocontents.vue"),
+    },
+    {
+        path: "/about",
+        name: "about",
+        component: () =>import("@/view/about/about.vue"),
     }
 ]
 const router = createRouter({
