@@ -2,14 +2,11 @@
   <headIndex></headIndex>
   <div class="infoDiv">
     <!-- <h1>PERSONAL PHOTOGRAPHER</h1> -->
-    <h2
-      class="company_name"
-      style="
+    <h2 class="company_name" style="
         font-family: KaiTi_GB2312;
         color: rgb(255, 255, 255);
         font-size: 42px;
-      "
-    >
+      ">
       宋浩然
     </h2>
     <p class="company_name" style="font-family: 微软雅黑; font-size: 14px">
@@ -21,10 +18,7 @@
   </div>
   <a-carousel autoplay>
     <div>
-      <img
-        class="myImage"
-        src="http://hkwba5f82.pic17.websiteonline.cn/upload/91ck.jpg"
-      />
+      <img class="myImage" src="http://hkwba5f82.pic17.websiteonline.cn/upload/91ck.jpg" />
     </div>
     <div>
       <img src="http://hkwba5f82.pic17.websiteonline.cn/upload/IMG_1818.JPG" />
@@ -42,115 +36,22 @@
       <p>PHOTO CASE</p>
       <h1>摄影案例展示</h1>
       <a href="">
-        <span class="caseTitle-a-span">点击查看 所有案例分类</span>
+        <span class="caseTitle-a-span"><router-link to="/PhotoContents" class="custom-link">点击查看
+            所有案例分类</router-link></span>
       </a>
     </div>
     <div class="caseContent">
       <!--照片-->
-      <div style="width: 370px; height: 330px; float: left">
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home1_03_o0c4.jpg"
-          style="width: 370px; height: 330px; transform: scale(1)"
-        />
-      </div>
-      <div
-        style="
-          width: 770px;
-          height: 330px;
-          display: inline;
-          margin-left: 55px;
-          float: left;
-        "
-      >
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home2_05.jpg"
-          style="width: 770px; height: 330px; transform: scale(1)"
-        />
-      </div>
-
-      <div style="width: 370px; height: 690px; float: left; margin-top: 35px">
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home3_09_tvke.jpg"
-          style="width: 370px; height: 690px; transform: scale(1)"
-        />
-      </div>
-
-      <div
-        style="
-          width: 370px;
-          height: 330px;
-          float: left;
-          margin-top: 35px;
-          margin-left: 55px;
-        "
-      >
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home4_10.jpg"
-          style="width: 370px; height: 330px; transform: scale(1)"
-        />
-      </div>
-
-      <div
-        style="
-          width: 370px;
-          height: 330px;
-          float: left;
-          margin-top: 35px;
-          margin-left: 55px;
-          margin-left: 30px;
-        "
-      >
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home4_10_062l.jpg"
-          style="width: 370px; height: 330px; transform: scale(1)"
-        />
-      </div>
-
-      <div
-        style="
-          width: 370px;
-          height: 330px;
-          float: left;
-          margin-top: 35px;
-          margin-left: 55px;
-        "
-      >
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home1_03_9d8f.jpg"
-          style="width: 370px; height: 330px; transform: scale(1)"
-        />
-      </div>
-
-      <div
-        style="
-          width: 370px;
-          height: 330px;
-          float: left;
-          margin-top: 35px;
-          margin-left: 55px;
-          margin-left: 30px;
-        "
-      >
-        <a></a>
-        <img
-          class="caseContentImg"
-          src="http://hkwba5f82.pic17.websiteonline.cn/upload/home4_10_ef1i.jpg"
-          style="width: 370px; height: 330px; transform: scale(1)"
-        />
+      <div id="image">
+        <template  v-for="item in photoArray">
+          <div style="float: left;">
+            <img :src="item.url" alt=""  @click="getOnclick" :data-original="`${item}`" style="float: left; width: 619px;  margin-bottom: 20px;"/>
+            <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
+          </div>
+        </template>
       </div>
     </div>
+    <div style="clear:both"></div> 
 
     <!--视频-->
     <div class="caseVideo">
@@ -161,34 +62,26 @@
           <span class="caseTitle-a-span">点击查看 所有案例分类</span>
         </a>
       </div>
-      <video
-        ref="videoPlayer"
-        class="video-js"
-        style="height: 100%; width: 100%; object-fit: cover"
-      ></video>
+      <video ref="videoPlayer" class="video-js" style="height: 100%; width: 100%; object-fit: cover"></video>
     </div>
 
     <!--视频作品集-->
     <div class="videoShowDiv">
       <div style="color: white; margin-top: 35px">
-        <h1
-          style="
+        <h1 style="
             font-size: 45px;
             text-align: center;
             font-family: cormorantgaramond-semibold, cormorantgaramond,
               cormorant garamond, serif;
-          "
-        >
+          ">
           DISCOVER
         </h1>
-        <p
-          style="
+        <p style="
             font-size: 12px;
             color: inherit;
             line-height: 1.5em;
             text-align: center;
-          "
-        >
+          ">
           my collection of edited works and other exclusive content
         </p>
       </div>
@@ -196,20 +89,17 @@
       <!--详情展示三个-->
       <div class="oneVideoShowDiv">
         <img
-          src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg"
-        />
+          src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg" />
         <span>标题</span>
       </div>
       <div class="twoVideoShowDiv">
         <img
-          src="https://static.wixstatic.com/media/b6108b_4057e259eac04ba8a3ad510b02c55a86~mv2.jpeg/v1/crop/x_17,y_68,w_3199,h_1834/fill/w_374,h_216,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/Screenshot%202024-06-28%20at%2014_14_39.jpeg"
-        />
+          src="https://static.wixstatic.com/media/b6108b_4057e259eac04ba8a3ad510b02c55a86~mv2.jpeg/v1/crop/x_17,y_68,w_3199,h_1834/fill/w_374,h_216,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/Screenshot%202024-06-28%20at%2014_14_39.jpeg" />
         <span>标题</span>
       </div>
       <div class="threeVideoShowDiv">
         <img
-          src="https://static.wixstatic.com/media/b6108b_3a93f0e7cc4c4f9d8b680b3cdfed309f~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/EYE%20-%20iPhone.jpg"
-        />
+          src="https://static.wixstatic.com/media/b6108b_3a93f0e7cc4c4f9d8b680b3cdfed309f~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/EYE%20-%20iPhone.jpg" />
         <span>标题</span>
       </div>
     </div>
@@ -221,84 +111,35 @@
       </div>
       <div class="aaa">
         <div class="box">
-          <ul
-            class="ulDomUl"
-            ref="ulDom"
-            @mouseenter="pause"
-            @mouseleave="resume"
-          >
+          <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
             <li class="ulDomLi" v-for="item in 2" :key="item">
-              <img
-                src="@/assets/bydlogo.png"
-              />
-              <img
-              src="@/assets/xbk.png"
-              />
-              <img
-             src="@/assets/ad.png"
-              />
-              <img
-              src="@/assets/bylogo.png"
-              />
-              <img
-              src="@/assets/bydlogo.png"
-              />
+              <img src="@/assets/bydlogo.png" />
+              <img src="@/assets/xbk.png" />
+              <img src="@/assets/ad.png" />
+              <img src="@/assets/bylogo.png" />
+              <img src="@/assets/bsj.png" />
             </li>
           </ul>
         </div>
       </div>
     </div>
     <!--联系我们-->
-    <div class="aboutDiv">
-      <div class="icons-list">
-        <a-popover>
-          <template #title>
-            <p style="font-size: 20px; margin-left: 30px">17502181757</p>
-          </template>
-          <img src="@/assets/phone.png" />
-        </a-popover>
-
-        <a-popover>
-          <template #content>
-            <img
-              src="@/assets/shx-wx.png"
-              style="object-fit: cover; width: 200px"
-            />
-          </template>
-          <img src="@/assets/email.png" />
-        </a-popover>
-
-        <a-popover>
-          <template #content>
-            <img
-              src="@/assets/shx-wx.png"
-              style="object-fit: cover; width: 200px"
-            />
-          </template>
-          <img src="@/assets/wx.png" />
-        </a-popover>
-      </div>
-      <div style="margin-top: 24px">
-        <p>
-          Copyright © 2009 - 2017 Cld , All Rights Reserved
-          版权信息：上海零点好奇有限责任公司
-        </p>
-      </div>
-    </div>
+    <bottomIndex></bottomIndex>
   </div>
 </template>
 <script>
-import { onMounted, onUnmounted, ref, defineComponent } from "vue";
+import { onMounted, onUnmounted, ref, defineComponent, reactive,toRefs } from "vue";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
-import { useRouter } from "vue-router";
 import headIndex from "@/view/head/index.vue"
+import bottomIndex from "@/view/bottom/bottomIndex.vue"
+import Viewer from 'viewerjs'
+import 'viewerjs/dist/viewer.css'
 
 export default defineComponent({
   name: "HelloWorld",
-  components: {headIndex},
+  components: { headIndex, bottomIndex },
   setup() {
-    const router = useRouter();
 
     const videoPlayer = ref(null);
     const myPlayer = ref(null);
@@ -306,9 +147,27 @@ export default defineComponent({
     const ulDom = ref(null);
     let animationId = null;
     let isPaused = false;
+    const photoShowList = reactive({
+      photoArray:[]
+    })
+    function addPhotoList(obj){
+      photoShowList.photoArray.push(obj)
+    }
+    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
+    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
+    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
+    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
+    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
+    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
+   // addPhotoList({url:require("@/assets/photoshow1.png"),msg:"SONY ZV-E1 LAUNCH FILM"})
 
-    const openPhotoView = () => {
-      router.push("https://www.baidu.com");
+    const getOnclick = () => {
+      const viewer = new Viewer(document.getElementById('image'), {
+        show: function () {
+          viewer.update();
+        },
+        // 相关配置项,详情见下面
+      });
     };
 
     const pause = () => {
@@ -329,7 +188,7 @@ export default defineComponent({
         if (position <= -(ulWidth / 2)) {
           position = 0;
         }
-        ulDom.value.style.transform = 'translateX('+position+'px)';
+        ulDom.value.style.transform = 'translateX(' + position + 'px)';
         animationId = requestAnimationFrame(animate);
       };
       animate();
@@ -361,7 +220,7 @@ export default defineComponent({
         }
       );
 
-    
+
     });
 
     onUnmounted(() => {
@@ -375,18 +234,18 @@ export default defineComponent({
       pause,
       resume,
       animation,
+      getOnclick,
+      ...toRefs(photoShowList)
     };
   },
 });
 </script>
 <style scoped>
-.icons-list {
-  margin-top: 80px;
+.custom-link {
+  text-decoration: none;
+  color: white;
 }
-.icons-list img {
-  width: 30px;
-  margin-right: 20px;
-}
+
 .aaa {
   display: flex;
   justify-content: center;
@@ -404,18 +263,19 @@ export default defineComponent({
   width: 200%;
   height: 100%;
 
-  & > li {
+  &>li {
     width: 1050px;
     height: 100%;
     float: left;
     list-style: none;
     display: flex;
-    & > img {
+
+    &>img {
       width: 130px;
-            height: 100px;
-            margin-top: 30px;
-            /* height: 100%; */
-            margin-right: 70px;
+      height: 100px;
+      margin-top: 30px;
+      /* height: 100%; */
+      margin-right: 70px;
     }
   }
 }
@@ -538,11 +398,10 @@ export default defineComponent({
 }
 
 .caseContent {
-  width: 1200px;
+  width: 100%;
   position: relative;
-  left: 20%;
   margin-top: 50px;
-  height: 1200px;
+  height: auto;
   background-color: black;
 }
 
@@ -571,20 +430,6 @@ export default defineComponent({
   background-color: black;
 }
 
-.aboutDiv {
-  position: relative;
-  height: 200px;
-  width: 100%;
-  float: left;
-  background-color: #2d322d;
-  color: rgb(136, 136, 136);
-  font-family: 微软雅黑;
-  font-size: 15px;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-weight: normal;
-}
 
 .caseContentImg:hover {
   cursor: pointer;

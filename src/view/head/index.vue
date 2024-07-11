@@ -5,14 +5,20 @@
       </li>
       <li class="photoPageLi"><router-link to="/PhotoContents" class="custom-link">照片案例</router-link>
       </li>
-      <li><router-link to="/" class="custom-link">视频案例</router-link></li>
+      <li><router-link to="/VideoContents" class="custom-link">视频案例</router-link></li>
       <li><router-link to="/" class="custom-link">关于我们</router-link></li>
       <li><router-link to="/" class="custom-link">联系我们</router-link></li>
     </ul>
   </div>
 </template>
 <script>
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "index",
+  setup() {
 
+  }
+})
 </script>
 <style scoped>
 
@@ -31,7 +37,7 @@
 }
 .photoPageLi:hover{
   cursor: pointer;
-  color: rgb(230, 229, 229);
+  color: rgb(224, 193, 193);
 }
 
 .custom-link{
@@ -40,7 +46,7 @@
 }
 
 .custom-link:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(224, 193, 193);
 }
 
 </style>

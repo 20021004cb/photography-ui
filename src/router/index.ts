@@ -11,6 +11,11 @@ export const routes: Array<RouteRecordRaw> = [
         path: "/PhotoContents",
         name: "PhotoContents",
         component: () =>import("@/view/photoContents/PhotoContents.vue"),
+    },
+    {
+        path: "/VideoContents",
+        name: "VideoContents",
+        component: () =>import("@/view/videoContents/Videocontents.vue"),
     }
 ]
 const router = createRouter({
