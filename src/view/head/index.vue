@@ -7,7 +7,7 @@
       </li>
       <li><router-link to="/VideoContents" class="custom-link">视频案例</router-link></li>
       <li><router-link to="/about" class="custom-link">关于我们</router-link></li>
-      <li><router-link to="/" class="custom-link">联系我们</router-link></li>
+      <!-- <li><router-link to="/" class="custom-link">联系我们</router-link></li> -->
     </ul>
   </div>
 </template>

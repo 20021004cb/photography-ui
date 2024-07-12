@@ -16,7 +16,7 @@
       --微信QQ：17502181757,2649702175
     </p>
   </div>
-  <a-carousel autoplay>
+  <!-- <a-carousel autoplay>
     <div>
       <img class="myImage" src="http://hkwba5f82.pic17.websiteonline.cn/upload/91ck.jpg" />
     </div>
@@ -29,45 +29,24 @@
     <div>
       <img src="http://hkwba5f82.pic17.websiteonline.cn/upload/1_15_003.jpg" />
     </div>
-  </a-carousel>
-  <!--案例展示-->
-  <div class="caseDiv">
-    <div class="caseTitle">
-      <p>PHOTO CASE</p>
-      <h1>摄影案例展示</h1>
-      <a href="">
-        <span class="caseTitle-a-span"><router-link to="/PhotoContents" class="custom-link">点击查看
-            所有案例分类</router-link></span>
-      </a>
-    </div>
-    <div class="caseContent">
-      <!--照片-->
-      <div id="image">
-        <template  v-for="item in photoArray">
-          <div style="float: left;">
-            <img :src="item.url" alt=""  @click="getOnclick" :data-original="`${item}`" style="float: left; width: 619px;  margin-bottom: 20px;"/>
-            <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
-          </div>
-        </template>
-      </div>
-    </div>
-    <div style="clear:both"></div> 
+  </a-carousel> -->
 
-    <!--视频-->
-    <div class="caseVideo">
-      <div class="caseTitle">
+  <!--视频-->
+  <div class="caseVideo">
+    <!-- <div class="caseTitle">
         <p>CAMERA GAGS CASE</p>
         <h1>摄像花絮</h1>
         <a href="">
           <span class="caseTitle-a-span">点击查看 所有案例分类</span>
         </a>
-      </div>
-      <video ref="videoPlayer" class="video-js" style="height: 100%; width: 100%; object-fit: cover"></video>
-    </div>
+      </div> -->
+    <video ref="videoPlayer" @click="clickVideo" class="video-js"
+      style="height: 100%; width: 100%; object-fit: cover"></video>
+  </div>
 
-    <!--视频作品集-->
-    <div class="videoShowDiv">
-      <div style="color: white; margin-top: 35px">
+  <!--视频作品集-->
+  <div class="videoShowDiv">
+    <!-- <div style="color: white; margin-top: 35px">
         <h1 style="
             font-size: 45px;
             text-align: center;
@@ -84,7 +63,10 @@
           ">
           my collection of edited works and other exclusive content
         </p>
-      </div>
+      </div> -->
+
+    <div class="VideoBigDiv">
+
 
       <!--详情展示三个-->
       <div class="oneVideoShowDiv">
@@ -103,16 +85,42 @@
         <span>标题</span>
       </div>
     </div>
+  </div>
+
+  <!--案例展示-->
+  <div class="caseDiv">
+    <div class="caseTitle">
+      <p>PHOTO CASE</p>
+      <h1>摄影案例展示</h1>
+      <a href="">
+        <span class="caseTitle-a-span"><router-link to="/PhotoContents" class="custom-link">点击查看
+            所有案例分类</router-link></span>
+      </a>
+    </div>
+    <div class="caseContent">
+      <!--照片-->
+      <div id="image">
+        <template v-for="item in photoArray">
+          <div class="imageDiv" >
+            <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
+              style="width: 619px;  margin-bottom: 20px;" />
+            <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+    <div style="clear:both"></div>
     <!--合作伙伴 -->
     <div class="partnerDiv">
-      <div class="caseTitle">
+      <div class="caseTitle" style="height: 150px;">
         <p class="company_name">COOPERATIVE PARTNER</p>
         <h1 class="company_name">合作伙伴</h1>
       </div>
       <div class="aaa">
         <div class="box">
           <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
-            <li class="ulDomLi" v-for="item in 2" :key="item">
+            <li class="ulDomLi">
               <img src="@/assets/bydlogo.png" />
               <img src="@/assets/xbk.png" />
               <img src="@/assets/ad.png" />
@@ -125,10 +133,10 @@
     </div>
     <!--联系我们-->
     <bottomIndex></bottomIndex>
-  </div>
+  
 </template>
 <script>
-import { onMounted, onUnmounted, ref, defineComponent, reactive,toRefs } from "vue";
+import { onMounted, onUnmounted, ref, defineComponent, reactive, toRefs } from "vue";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
 import headIndex from "@/view/head/index.vue"
@@ -148,18 +156,18 @@ export default defineComponent({
     let animationId = null;
     let isPaused = false;
     const photoShowList = reactive({
-      photoArray:[]
+      photoArray: []
     })
-    function addPhotoList(obj){
+    function addPhotoList(obj) {
       photoShowList.photoArray.push(obj)
     }
-    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
-    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
-    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
-    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
-    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
-    addPhotoList({url:"http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg",msg:"SONY ZV-E1 LAUNCH FILM"})
-   // addPhotoList({url:require("@/assets/photoshow1.png"),msg:"SONY ZV-E1 LAUNCH FILM"})
+    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    // addPhotoList({url:require("@/assets/photoshow1.png"),msg:"SONY ZV-E1 LAUNCH FILM"})
 
     const getOnclick = () => {
       const viewer = new Viewer(document.getElementById('image'), {
@@ -169,6 +177,10 @@ export default defineComponent({
         // 相关配置项,详情见下面
       });
     };
+
+    const clickVideo = () => {
+      console.log(111)
+    }
 
     const pause = () => {
       cancelAnimationFrame(animationId);
@@ -196,7 +208,6 @@ export default defineComponent({
 
     onMounted(() => {
       animation();
-
       myPlayer.value = videojs(
         videoPlayer.value,
         {
@@ -214,12 +225,14 @@ export default defineComponent({
             },
           },
           playbackRates: [0.5, 1, 1.5, 2],
+          autoplay: "muted",
+          loop: "true",
+          preload: "auto"
         },
         () => {
           myPlayer.value.log("play.....");
         }
       );
-
 
     });
 
@@ -235,12 +248,25 @@ export default defineComponent({
       resume,
       animation,
       getOnclick,
-      ...toRefs(photoShowList)
+      ...toRefs(photoShowList),
+      clickVideo
     };
   },
 });
 </script>
 <style scoped>
+
+.imageDiv{
+  float: left; width: 33%; max-width: 619px; /* 最大宽度限制 */
+}
+
+.VideoBigDiv {
+  position: relative;
+  width: 800px;
+  height: 425px;
+  margin: auto
+}
+
 .custom-link {
   text-decoration: none;
   color: white;
@@ -250,12 +276,12 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 50%;
 }
 
 .box {
   width: 1050px;
-  height: 188px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -271,10 +297,8 @@ export default defineComponent({
     display: flex;
 
     &>img {
-      width: 130px;
-      height: 100px;
-      margin-top: 30px;
-      /* height: 100%; */
+      width: 20%;
+      height: 20%;
       margin-right: 70px;
     }
   }
@@ -283,37 +307,31 @@ export default defineComponent({
 .twoVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
-  display: inline;
   width: 374px;
   height: 529px;
   position: absolute;
-  left: 30%;
   margin-left: 200px;
+  margin-top: -120px;
   z-index: 2;
 }
 
 .oneVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
-  display: inline;
   width: 312px;
   height: 421px;
   position: absolute;
-  left: 18%;
-  margin-left: 200px;
-  margin-top: 50px;
+  margin-top: -70px;
 }
 
 .threeVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
-  display: inline;
   width: 312px;
   height: 421px;
   position: absolute;
-  left: 45%;
-  margin-left: 200px;
-  margin-top: 50px;
+  margin-left: 485px;
+  margin-top: -70px;
 }
 
 .threeVideoShowDiv:hover {
@@ -363,8 +381,13 @@ export default defineComponent({
 }
 
 
-.caseTitle {
-  margin-top: 50px;
+.caseDiv {
+  position: relative;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: black;
+    margin-bottom: 65px;
 }
 
 .caseTitle p {
@@ -414,17 +437,16 @@ export default defineComponent({
 
 .videoShowDiv {
   position: relative;
-  height: 670px;
+  height: 500px;
   width: 100%;
   float: left;
   background-color: black;
-  margin-top: 135px;
 }
 
 .partnerDiv {
   color: white;
   position: relative;
-  height: 500px;
+  height: 350px;
   width: 100%;
   float: left;
   background-color: black;

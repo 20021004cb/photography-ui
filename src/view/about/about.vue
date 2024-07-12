@@ -103,6 +103,9 @@
 import { defineComponent, onMounted, reactive ,toRefs} from "vue";
 import headIndex from "@/view/head/index.vue"
 import bottomIndex from "@/view/bottom/bottomIndex.vue"
+import Viewer from 'viewerjs'
+import 'viewerjs/dist/viewer.css'
+
 export default defineComponent({
     name: "HelloWorld",
     components: { headIndex, bottomIndex },
@@ -246,7 +249,7 @@ export default defineComponent({
     z-index: 2;
     float: left;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 20%;
     color: white;
     text-align: left;
