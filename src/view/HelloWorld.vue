@@ -138,7 +138,7 @@
 <script>
 import { onMounted, onUnmounted, ref, defineComponent, reactive, toRefs } from "vue";
 import videojs from "video.js";
-import "video.js/dist/video-js.css";
+import "video.js/dist/video-js-index.css";
 import headIndex from "@/view/head/index.vue"
 import bottomIndex from "@/view/bottom/bottomIndex.vue"
 import Viewer from 'viewerjs'
