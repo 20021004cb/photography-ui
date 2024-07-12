@@ -76,11 +76,7 @@ export default defineComponent({
                   type: "video/mp4",
                 },
               ],
-              controlBar: {
-                remainingTimeDisplay: {
-                  displayNegative: false,
-                },
-              },
+              
               playbackRates: [0.5, 1, 1.5, 2],
               autoplay: true
             },
