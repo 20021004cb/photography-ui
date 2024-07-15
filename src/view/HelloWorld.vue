@@ -161,12 +161,12 @@ export default defineComponent({
     function addPhotoList(obj) {
       photoShowList.photoArray.push(obj)
     }
-    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: "http://hkwba5f82.pic17.websiteonline.cn/upload/ht0g.jpg", msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
     // addPhotoList({url:require("@/assets/photoshow1.png"),msg:"SONY ZV-E1 LAUNCH FILM"})
 
     const getOnclick = () => {

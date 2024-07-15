@@ -22,11 +22,10 @@ export default defineComponent({
     components: { headIndex, bottomIndex },
     setup() {
         const photoShowList = reactive([
-            "http://hkwba5f82.pic17.websiteonline.cn/upload/xio1.jpg",
-            "http://hkwba5f82.pic17.websiteonline.cn/upload/IMG_1465.JPG",
-            "http://hkwba5f82.pic17.websiteonline.cn/upload/KV3_runz.jpg",
-            "http://hkwba5f82.pic17.websiteonline.cn/upload/pj9g.jpg",
-            "http://hkwba5f82.pic17.websiteonline.cn/upload/5i1j.jpg",
+        require("@/assets/xio1.jpg"),
+        require("@/assets/2.jpg"),
+        require("@/assets/3.jpg"),
+        require("@/assets/4j.jpg"),
         ])
         const getOnclick = () => {
             const viewer = new Viewer(document.getElementById('image'), {
