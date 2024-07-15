@@ -7,6 +7,7 @@ module.exports = defineConfig({
     },
   },
   outputDir: 'docs',
+   publicPath: '/photography-ui/',
   css: {
     loaderOptions: {
       less: {
