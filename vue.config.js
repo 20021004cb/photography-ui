@@ -6,6 +6,7 @@ module.exports = defineConfig({
       entry: "src/main.ts",
     },
   },
+  outputDir: 'docs',
   css: {
     loaderOptions: {
       less: {
