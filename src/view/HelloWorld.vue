@@ -98,6 +98,10 @@
       </a>
     </div>
     <div class="caseContent">
+      <div style="margin-bottom: 20px;">
+        <img src="@/assets/index/food.png" style="width: 42px;height: 42px;"/>
+        <span style=" color: white; font-size: 18px;margin-left: 20px;position: relative; bottom: -12px;">菜品系列</span>
+      </div>
       <!--照片-->
       <div id="image">
         <template v-for="item in photoArray">
@@ -161,14 +165,13 @@ export default defineComponent({
     function addPhotoList(obj) {
       photoShowList.photoArray.push(obj)
     }
-    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
-    addPhotoList({ url: require("@/assets/sy.jpg"), msg: "SONY ZV-E1 LAUNCH FILM" })
-    // addPhotoList({url:require("@/assets/photoshow1.png"),msg:"SONY ZV-E1 LAUNCH FILM"})
-
+    addPhotoList({ url: require("@/assets/index/food1.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/index/food2.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/index/food3.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/index/food4.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/index/food5.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPhotoList({ url: require("@/assets/index/food6.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    
     const getOnclick = () => {
       const viewer = new Viewer(document.getElementById('image'), {
         show: function () {
