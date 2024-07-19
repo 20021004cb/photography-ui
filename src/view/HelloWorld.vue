@@ -139,10 +139,10 @@
       <div class="box">
         <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
           <li class="ulDomLi">
-            <img src="@/assets/bydlogo.png" />
+            <img src="@/assets/partner/bydlogo.png" />
             <img src="@/assets/xbk.png" />
-            <img src="@/assets/ad.png" />
-            <img src="@/assets/bylogo.png" />
+            <img src="@/assets/partner/aodi.png" />
+            <img src="@/assets/partner/benchi.png" />
             <img src="@/assets/bsj.png" />
           </li>
         </ul>
