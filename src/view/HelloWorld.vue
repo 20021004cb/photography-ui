@@ -99,13 +99,27 @@
     </div>
     <div class="caseContent">
       <div style="margin-bottom: 20px;">
-        <img src="@/assets/index/food.png" style="width: 42px;height: 42px;"/>
-        <span style=" color: white; font-size: 18px;margin-left: 20px;position: relative; bottom: -12px;">菜品系列</span>
+        <img src="@/assets/index/food.png" style="width: 42px;height: 42px;" />
+        <span style=" color: white; font-size: 25px;margin-left: 20px;position: relative;bottom: -12px;font-weight: 500; ">菜品系列</span>
+      </div>
+          <!--照片-->
+      <div id="image">
+        <template v-for="item in photoArray">
+          <div class="imageDiv">
+            <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
+              style="width: 619px;  margin-bottom: 20px;" />
+            <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
+          </div>
+        </template>
+      </div>
+      <div style="padding-top: 30px;padding-bottom: 20px;clear:both">
+        <img src="@/assets/index/people.png" style="width: 42px;height: 42px;" />
+        <span style=" color: white; font-size: 25px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;">人像系列</span>
       </div>
       <!--照片-->
       <div id="image">
-        <template v-for="item in photoArray">
-          <div class="imageDiv" >
+        <template v-for="item in peopleArray">
+          <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
               style="width: 619px;  margin-bottom: 20px;" />
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
@@ -114,30 +128,30 @@
       </div>
     </div>
   </div>
-    <div style="clear:both"></div>
-    <!--合作伙伴 -->
-    <div class="partnerDiv">
-      <div class="caseTitle" style="height: 150px;">
-        <p class="company_name">COOPERATIVE PARTNER</p>
-        <h1 class="company_name">合作伙伴</h1>
-      </div>
-      <div class="aaa">
-        <div class="box">
-          <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
-            <li class="ulDomLi">
-              <img src="@/assets/bydlogo.png" />
-              <img src="@/assets/xbk.png" />
-              <img src="@/assets/ad.png" />
-              <img src="@/assets/bylogo.png" />
-              <img src="@/assets/bsj.png" />
-            </li>
-          </ul>
-        </div>
+  <div style="clear:both"></div>
+  <!--合作伙伴 -->
+  <div class="partnerDiv">
+    <div class="caseTitle" style="height: 150px;">
+      <p class="company_name">COOPERATIVE PARTNER</p>
+      <h1 class="company_name">合作伙伴</h1>
+    </div>
+    <div class="aaa">
+      <div class="box">
+        <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
+          <li class="ulDomLi">
+            <img src="@/assets/bydlogo.png" />
+            <img src="@/assets/xbk.png" />
+            <img src="@/assets/ad.png" />
+            <img src="@/assets/bylogo.png" />
+            <img src="@/assets/bsj.png" />
+          </li>
+        </ul>
       </div>
     </div>
-    <!--联系我们-->
-    <bottomIndex></bottomIndex>
-  
+  </div>
+  <!--联系我们-->
+  <bottomIndex></bottomIndex>
+
 </template>
 <script>
 import { onMounted, onUnmounted, ref, defineComponent, reactive, toRefs } from "vue";
@@ -147,7 +161,7 @@ import headIndex from "@/view/head/index.vue"
 import bottomIndex from "@/view/bottom/bottomIndex.vue"
 import Viewer from 'viewerjs'
 import 'viewerjs/dist/viewer.css'
- 
+
 export default defineComponent({
   name: "HelloWorld",
   components: { headIndex, bottomIndex },
@@ -159,6 +173,7 @@ export default defineComponent({
     const ulDom = ref(null);
     let animationId = null;
     let isPaused = false;
+    //菜品系列
     const photoShowList = reactive({
       photoArray: []
     })
@@ -171,7 +186,21 @@ export default defineComponent({
     addPhotoList({ url: require("@/assets/index/food4.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
     addPhotoList({ url: require("@/assets/index/food5.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
     addPhotoList({ url: require("@/assets/index/food6.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
-    
+
+    //人像系列
+    const peopleShowList = reactive({
+      peopleArray: []
+    })
+    function addPeopleList(obj) {
+      peopleShowList.peopleArray.push(obj)
+    }
+    addPeopleList({ url: require("@/assets/photoContents/photo2.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPeopleList({ url: require("@/assets/index/people1.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPeopleList({ url: require("@/assets/index/people2.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPeopleList({ url: require("@/assets/index/people3.png"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPeopleList({ url: require("@/assets/index/people4.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addPeopleList({ url: require("@/assets/index/people5.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+
     const getOnclick = () => {
       const viewer = new Viewer(document.getElementById('image'), {
         show: function () {
@@ -252,15 +281,18 @@ export default defineComponent({
       animation,
       getOnclick,
       ...toRefs(photoShowList),
+        ...toRefs(peopleShowList),
       clickVideo
     };
   },
 });
 </script>
 <style scoped>
-
-.imageDiv{
-  float: left; width: 33%; max-width: 619px; /* 最大宽度限制 */
+.imageDiv {
+  float: left;
+  width: 33%;
+  max-width: 619px;
+  /* 最大宽度限制 */
 }
 
 .VideoBigDiv {
@@ -386,11 +418,11 @@ export default defineComponent({
 
 .caseDiv {
   position: relative;
-    height: auto;
-    width: 100%;
-    float: left;
-    background-color: black;
-    margin-bottom: 65px;
+  height: auto;
+  width: 100%;
+  float: left;
+  background-color: black;
+  margin-bottom: 65px;
 }
 
 .caseTitle p {
