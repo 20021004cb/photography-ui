@@ -6,7 +6,7 @@
       <template v-for="(item, index) in photoArray">
         <div style="float: left;">
           <img :src="item.imgUrl" alt="" @click="getOnclick(item)"
-            style="float: left; width: 619px;  margin-bottom: 20px;" v-if="!item.visible" />
+            style="float: left; width: 619px; height: 265px; margin-bottom: 20px;" v-if="!item.visible" />
 
           <video :id="item.id" class="video-js" v-if="item.visible" style="object-fit: cover;float:left" :style="vidoeStyle"></video>
           <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
@@ -46,11 +46,11 @@ export default defineComponent({
         function addPhotoList(obj:any) {
           photoShowList.photoArray.push(obj)
         }
-        addPhotoList({videoUrl: require("@/assets/mp4/kouhong.mp4"), imgUrl: require("@/assets/mp4/kh.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "kh1", visible: false })
-        addPhotoList({videoUrl: require("@/assets/mp4/kouhong.mp4"), imgUrl: require("@/assets/mp4/kh.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "kh2", visible: false })
+        addPhotoList({videoUrl: require("@/assets/videoContents/hanting.mp4"), imgUrl: require("@/assets/videoContents/hanting.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "hanting", visible: false })
         addPhotoList({videoUrl: require("@/assets/mp4/kouhong.mp4"), imgUrl: require("@/assets/mp4/kh.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "kh3", visible: false })
-        addPhotoList({videoUrl: require("@/assets/mp4/kouhong.mp4"), imgUrl: require("@/assets/mp4/kh.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "kh4", visible: false })
-        addPhotoList({videoUrl: require("@/assets/mp4/kouhong.mp4"), imgUrl: require("@/assets/mp4/kh.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "kh5", visible: false })
+        addPhotoList({videoUrl: require("@/assets/videoContents/atelasi.mp4"), imgUrl: require("@/assets/videoContents/atelasi.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "atelasi", visible: false })
+        addPhotoList({videoUrl: require("@/assets/videoContents/baxi.mp4"), imgUrl: require("@/assets/videoContents/baxi.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "baxi", visible: false })
+        addPhotoList({videoUrl: require("@/assets/videoContents/car.mp4"), imgUrl: require("@/assets/videoContents/car.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "car", visible: false })
         addPhotoList({videoUrl: require("@/assets/mp4/kouhong.mp4"), imgUrl: require("@/assets/mp4/kh.png"), msg: "SONY ZV-E1 LAUNCH FILM", id: "kh6", visible: false })
 
     const getOnclick = (item:any) => {
