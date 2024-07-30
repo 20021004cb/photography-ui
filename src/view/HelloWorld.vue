@@ -140,7 +140,7 @@
         <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
           <li class="ulDomLi">
             <img src="@/assets/partner/bydlogo.png" />
-            <img src="@/assets/xbk.png" />
+            <img src="@/assets/partner/zfb.png" />
             <img src="@/assets/partner/aodi.png" />
             <img src="@/assets/partner/benchi.png" />
             <img src="@/assets/bsj.png" />
@@ -332,8 +332,8 @@ export default defineComponent({
     display: flex;
 
     &>img {
-      width: 20%;
-      height: 20%;
+      /* width: 20%;
+      height: 20%; */
       margin-right: 70px;
     }
   }
