@@ -37,28 +37,28 @@
         </div>
 
         <div class="memberDiv" style="height: 1100px;  margin-top: 55px;">
-            <div class="memberDetailDiv" style=" width: 13%; height: 13%;  position: absolute;left: 15%; ">
+            <div class="memberDetailDiv" style=" width: 13%; height: 10%;  position: absolute;left: 15%; ">
                 <img style="width: 100%; height: 100%;   margin-bottom: 20px;" src="@/assets/about/song.jpg" />
                 <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>陈小然</b></div>
                 <span style="color: white;word-wrap: break-word;font-size:20px">
                     一名对摄影充满无限热情的创作者。我热爱用镜头捕捉生活中的每一个精彩瞬间，无论是壮丽的自然风光，还是人物的细腻情感，都能让我心动不已。在过去的[X]年里，我游历了许多美丽的地方，积累了丰富的拍摄经验。我擅长运用光影和色彩，为每一张照片赋予独特的灵魂，让观众能够感受到画面背后的故事。我相信，摄影不仅仅是记录，更是一种表达，一种能够触动人心的艺术形式。期待能通过我的镜头，为您展现一个别样的世界！
                 </span>
             </div>
-            <div class="memberDetailDiv" style=" width: 13%; height: 13%; position: absolute;left: 35%; ">
+            <div class="memberDetailDiv" style=" width: 13%; height: 10%; position: absolute;left: 35%; ">
                 <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>暖暖</b></div>
                 <span style="color: white;word-wrap: break-word;font-size:20px">
                    摄影对我来说，就像是一扇通往无限可能的窗户。从按下快门的那一刻起，我便开始了一场与时间和空间的对话。我专注于人像摄影，善于捕捉人物最真实、最动人的瞬间，展现他们的个性与魅力。我注重细节，追求完美的构图和独特的视角，以确保每一次拍摄都是一次独特的创作。无论是时尚的大片还是温馨的家庭写真，我都能以专业的技术和敏锐的洞察力，为您留下珍贵的回忆。选择我作为您的摄影师，让我们一起用影像书写属于您的精彩篇章！
                 </span>
                 <img style="width: 100%; height: 100%;  margin-bottom: 20px;" src="@/assets/about/nuan.jpg" />
             </div>
-            <div class="memberDetailDiv" style=" width: 13%; height: 13%;  position: absolute;left: 52%; ">
+            <div class="memberDetailDiv" style=" width: 13%; height: 10%;  position: absolute;left: 52%; ">
                 <img style="width: 100%; height: 100%;  margin-bottom: 20px;" src="@/assets/about/tzb.jpg" />
                 <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>特种兵</b></div>
                 <span style="color: white;word-wrap: break-word;font-size:20px">
                     是一位痴迷于摄影的探索者。我对摄影的热爱源于对生活中美好事物的敏锐感知。我擅长风景摄影，喜欢追逐日出日落的绚烂色彩，沉醉于山川湖泊的宁静壮美。我善于运用不同的拍摄技巧和后期处理方法，将大自然的魅力展现得淋漓尽致。同时，我也热衷于街头摄影，捕捉城市中那些稍纵即逝的瞬间，展现生活的百态。我相信，每一张照片都是时光的标本，记录着那一刻的永恒。让我用镜头为您定格那些珍贵的瞬间，留下难忘的影像记忆。
                 </span>
             </div>
-            <div class="memberDetailDiv" style=" width: 13%; height: 13%;  position: absolute;left: 70%; ">
+            <div class="memberDetailDiv" style=" width: 13%; height: 10%;  position: absolute;left: 70%; ">
                 <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>毕</b></div>
                 <span style="color: white;word-wrap: break-word;font-size:20px">
                    摄影是我生命中不可或缺的一部分，它是我表达自我、分享美的方式。我在摄影领域已经深耕了[X]年，积累了丰富的实战经验和独特的艺术见解。我不仅擅长传统的摄影手法，还勇于尝试创新的拍摄技术和理念。无论是商业摄影还是艺术摄影，我都能精准把握客户需求，用镜头语言传达出最深刻的内涵。我热衷于挑战自我，不断突破摄影的边界，为每一个项目带来全新的视觉体验。期待与您携手，共同创造令人惊叹的视觉盛宴！
