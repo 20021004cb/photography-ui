@@ -7,7 +7,7 @@
         color: rgb(255, 255, 255);
         font-size: 42px;
       ">
-      宋浩然
+      上海零点好奇
     </h2>
     <p class="company_name" style="font-family: 微软雅黑; font-size: 14px">
       --联系电话：17502181757
@@ -72,17 +72,27 @@
       <div class="oneVideoShowDiv">
         <img
           src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg" />
-        <span>标题</span>
+        <h2 style="margin-top: 30px;">Zero Curiosity, Peak Vision</h2>
+        <span>Zero Curiosity, Infinite Wonder - Shanghai Zero Curiosity Film and Television Co., Ltd</span>
+        <h2 style="margin-top: 30px;">零点探秘</h2>
       </div>
       <div class="twoVideoShowDiv">
         <img
           src="https://static.wixstatic.com/media/b6108b_4057e259eac04ba8a3ad510b02c55a86~mv2.jpeg/v1/crop/x_17,y_68,w_3199,h_1834/fill/w_374,h_216,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/Screenshot%202024-06-28%20at%2014_14_39.jpeg" />
-        <span>标题</span>
+        <h2 style="margin-top: 30px;">Infinite Curiosity, Zero Limits</h2>
+        <span>
+          Unveiling Wonders at Zero Hour with Shanghai Zero Curiosity Film and Television
+          <br> <br>
+         Embark on a Cinematic Odyssey with Shanghai Zero Curiosity Film, where every frame ignites your imagination and takes you to uncharted territories of entertainment.
+        </span>
+           <h2 style="margin-top: 30px;">好奇追影</h2>
       </div>
       <div class="threeVideoShowDiv">
         <img
           src="https://static.wixstatic.com/media/b6108b_3a93f0e7cc4c4f9d8b680b3cdfed309f~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/EYE%20-%20iPhone.jpg" />
-        <span>标题</span>
+        <h2 style="margin-top: 30px;">Curiosity Starts at Zero</h2>
+        <span>Shanghai Zero Curiosity Film and Television: Where Curiosity Sparks Extraordinary Stories</span>
+           <h2 style="margin-top: 30px;">零点寻奇</h2>
       </div>
     </div>
   </div>
@@ -99,33 +109,49 @@
     </div>
     <div class="caseContent">
       <div style="margin-bottom: 20px;">
-        <img src="@/assets/index/food.png" style="width: 42px;height: 42px;" />
-        <span style=" color: white; font-size: 25px;margin-left: 20px;position: relative;bottom: -12px;font-weight: 500; ">菜品系列</span>
+        <!-- <img src="@/assets/index/food.png" style="width: 42px;height: 42px;" /> -->
+        <span style=" color: white; font-size: 35px;margin-left: 20px;position: relative;bottom: -12px;font-weight: 500;font-family: -apple-system-caption1; ">菜品系列</span>
       </div>
           <!--照片-->
       <div id="image">
-        <template v-for="item in photoArray">
+        <template v-for="item in photoArray" :key="item.url">
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-              style="width: 619px;  margin-bottom: 20px;" />
+                style="width: 700px;  margin-bottom: 20px;"/>
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
       </div>
       <div style="padding-top: 30px;padding-bottom: 20px;clear:both">
-        <img src="@/assets/index/people.png" style="width: 42px;height: 42px;" />
-        <span style=" color: white; font-size: 25px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;">人像系列</span>
+        <!-- <img src="@/assets/index/people.png" style="width: 42px;height: 42px;" /> -->
+        <span style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">人像系列</span>
       </div>
       <!--照片-->
       <div id="image">
-        <template v-for="item in peopleArray">
+        <template v-for="item in peopleArray" :key="item.url" >
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-              style="width: 619px;  margin-bottom: 20px;" />
+              style="width: 700px;  margin-bottom: 20px;" />
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
       </div>
+
+<div style="padding-top: 30px;padding-bottom: 20px;clear:both">
+        <!-- <img src="@/assets/index/people.png" style="width: 42px;height: 42px;" /> -->
+        <span style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">化妆品系列</span>
+      </div>
+      <!--照片-->
+      <div id="image">
+        <template v-for="item in hzpArray" :key="item.url" >
+          <div class="imageDiv">
+            <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
+              style="width: 700px;  margin-bottom: 20px;" />
+            <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
+          </div>
+        </template>
+      </div>
+
     </div>
   </div>
   <div style="clear:both"></div>
@@ -139,11 +165,11 @@
       <div class="box">
         <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
           <li class="ulDomLi">
-            <img src="@/assets/partner/bydlogo.png" />
-            <img src="@/assets/partner/zfb.png" />
-            <img src="@/assets/partner/aodi.png" />
-            <img src="@/assets/partner/benchi.png" />
-            <img src="@/assets/bsj.png" />
+            <img src="@/assets/partner/bydlogo.png" style="margin-right:60px" />
+            <img src="@/assets/partner/zfb.png" style="margin-right:60px"  />
+            <img src="@/assets/partner/aodi.png" style="margin-right:60px" />
+            <img src="@/assets/partner/benchi.png" style="margin-right:60px"  />
+            <img src="@/assets/bsj.png" style="margin-right:60px" />
           </li>
         </ul>
       </div>
@@ -200,6 +226,21 @@ export default defineComponent({
     addPeopleList({ url: require("@/assets/index/people3.png"), msg: "SONY A7-M4 LAUNCH FILM" })
     addPeopleList({ url: require("@/assets/index/people4.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
     addPeopleList({ url: require("@/assets/index/people5.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+
+//化妆品系列
+    const hzpShowList = reactive({
+      hzpArray: []
+    })
+    function addhzpList(obj) {
+      hzpShowList.hzpArray.push(obj)
+    }
+    addhzpList({ url: require("@/assets/index/hzp.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addhzpList({ url: require("@/assets/index/hzp2.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addhzpList({ url: require("@/assets/index/hzp3.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addhzpList({ url: require("@/assets/index/hzp4.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addhzpList({ url: require("@/assets/index/hzp5.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+    addhzpList({ url: require("@/assets/index/hzp6.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
+
 
     const getOnclick = () => {
       const viewer = new Viewer(document.getElementById('image'), {
@@ -282,6 +323,8 @@ export default defineComponent({
       getOnclick,
       ...toRefs(photoShowList),
         ...toRefs(peopleShowList),
+          ...toRefs(hzpShowList),
+      
       clickVideo
     };
   },
@@ -291,7 +334,7 @@ export default defineComponent({
 .imageDiv {
   float: left;
   width: 33%;
-  max-width: 619px;
+  /* max-width: 619px; */
   /* 最大宽度限制 */
 }
 
@@ -311,38 +354,34 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 70%;
 }
 
 .box {
-  width: 1050px;
-  height: 150px;
+  width: 1500px;
+  /* height: 150px; */
   overflow: hidden;
 }
 
 .ulDomUl {
   width: 200%;
   height: 100%;
-
-  &>li {
-    width: 1050px;
+}
+ulDomUl>li{
+ width: 1050px;
     height: 100%;
     float: left;
     list-style: none;
     display: flex;
 
-    &>img {
-      /* width: 20%;
-      height: 20%; */
-      margin-right: 70px;
-    }
-  }
 }
-
+ulDomUl>li>img{
+      margin-right: 70px;
+}
 .twoVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
-  width: 374px;
+  width: 380px;
   height: 529px;
   position: absolute;
   margin-left: 200px;
@@ -353,7 +392,7 @@ export default defineComponent({
 .oneVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
-  width: 312px;
+  width: 320px;
   height: 421px;
   position: absolute;
   margin-top: -70px;
@@ -362,7 +401,7 @@ export default defineComponent({
 .threeVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
-  width: 312px;
+  width: 320px;
   height: 421px;
   position: absolute;
   margin-left: 485px;
@@ -481,7 +520,7 @@ export default defineComponent({
 .partnerDiv {
   color: white;
   position: relative;
-  height: 350px;
+  height: 420px;
   width: 100%;
   float: left;
   background-color: black;
