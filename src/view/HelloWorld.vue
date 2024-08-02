@@ -7,7 +7,7 @@
         color: rgb(255, 255, 255);
         font-size: 42px;
       ">
-      上海零点好奇
+      上海零点好奇有限责任公司
     </h2>
     <p class="company_name" style="font-family: 微软雅黑; font-size: 14px">
       --联系电话：17502181757
@@ -117,7 +117,7 @@
         <template v-for="item in photoArray" :key="item.url">
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-                style="width: 700px;  margin-bottom: 20px;"/>
+                style="width: 100%;  margin-bottom: 20px;"/>
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
