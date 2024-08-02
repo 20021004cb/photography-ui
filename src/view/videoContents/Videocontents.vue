@@ -24,7 +24,7 @@ import headIndex from "@/view/head/index.vue"
 import bottomIndex from "@/view/bottom/bottomIndex.vue"
 import 'viewerjs/dist/viewer.css'
 import videojs from "video.js";
-import "video.js/dist/video-js-details.css";
+import "video.js/dist/video-js.css";
 
 
 export default defineComponent({
