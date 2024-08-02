@@ -9,25 +9,25 @@
         <span
             style="font-family: &quot;Times New Roman&quot; letter-spacing: 0.4pt; color: rgb(255, 255, 255); font-size: 19px;">commercial
             photography</span>
-        <h1 style="margin-top: 10px;">XXX</h1>
+        <h1 style="margin-top: 10px;">上海零点好奇有限责任公司</h1>
     </div>
     <div class="topDiv">
-        <img style="height: 400px;width: 100%;"
-            src="http://hkwba5f82.pic17.websiteonline.cn/upload/templatefiles/bannerny.jpg" />
+        <img style="height: 500px;width: 100%;"
+            src="@/assets/about/about.jpg" />
     </div>
 
     <div class="aboutContentDiv">
         <div class="caseTitle">
             <p class="company_name">ABOUT US</p>
             <h1 class="company_name">关于我们</h1>
-            <p>光舞影绰皆为产品雕刻,铎语响彻助你一锤定音</p>
+            <p>在零点时刻揭开奇迹，上海零点好奇影视</p>
         </div>
         <div>
             <img class="aboutImg" v-on:mousemove="mouseOverHandler" v-on:mouseleave="mouseLeaveHandler"
                 src="http://hkwba5f82.pic17.websiteonline.cn/upload/@@@231321312-1024x361.jpg" />
             <div id="imgMsg">
-                <h4>上海零点好奇有限责任公司-商业广告摄影产品拍摄家电拍摄化妆品拍摄产品摄影上海产品摄影上海家电摄影商业摄影五金拍摄</h4>
-                <p>产品摄影箱包拍摄工业产品拍摄手表拍摄卫浴拍摄酒类拍摄饮料拍摄数码拍摄</p>
+                <h4>上海零点好奇有限责任公司-商业广告摄影、产品拍摄、家电拍摄、化妆品拍摄、商业摄影、五金拍摄</h4>
+                <p>箱包拍摄、工业产品拍摄、手表拍摄、卫浴拍摄、酒类拍摄、饮料拍摄、数码拍摄等</p>
             </div>
         </div>
 
@@ -36,39 +36,35 @@
             <h1 class="company_name">公司摄影师成员</h1>
         </div>
 
-        <div class="memberDiv" style="height: 700px;    margin-top: 55px;">
-            <div class="memberDetailDiv" style=" width: 200px; height: 440px;  position: absolute;left: 20%; ">
-                <img style="width: 200px; height: 440px;   margin-bottom: 20px;" src="@/assets/member/s.jpg" />
-                <div style="color: white;text-align: center;height: 24px;width: 200px;"><b>宋浩然</b></div>
-                <span style="color: white;word-wrap: break-word;width: 200px; height: 440px;">
-                    曾工作于上海橡菲贸易有限公司，任产品研发中心负责人，全网电商皮衣第一品牌。后工作于上海阿里巴巴数据中心任事业部经理，上海地区阿里巴巴B2C平台TOP卖家视觉策划执行。
-                    2015年-至今，创始新媒体软时尚公众号，细分领域粉丝人群7W。
+        <div class="memberDiv" style="height: 1100px;  margin-top: 55px;">
+            <div class="memberDetailDiv" style=" width: 13%; height: 13%;  position: absolute;left: 15%; ">
+                <img style="width: 100%; height: 100%;   margin-bottom: 20px;" src="@/assets/about/song.jpg" />
+                <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>陈小然</b></div>
+                <span style="color: white;word-wrap: break-word;font-size:20px">
+                    一名对摄影充满无限热情的创作者。我热爱用镜头捕捉生活中的每一个精彩瞬间，无论是壮丽的自然风光，还是人物的细腻情感，都能让我心动不已。在过去的[X]年里，我游历了许多美丽的地方，积累了丰富的拍摄经验。我擅长运用光影和色彩，为每一张照片赋予独特的灵魂，让观众能够感受到画面背后的故事。我相信，摄影不仅仅是记录，更是一种表达，一种能够触动人心的艺术形式。期待能通过我的镜头，为您展现一个别样的世界！
                 </span>
             </div>
-            <div class="memberDetailDiv" style=" width: 200px; height: 440px;  position: absolute;left: 35%; ">
-                <div style="color: white;text-align: center;height: 24px;width: 200px;"><b>暖老师</b></div>
-                <span style="color: white;word-wrap: break-word;width: 200px; height: 440px;">
-                    曾工作于上海橡菲贸易有限公司，任产品研发中心负责人，全网电商皮衣第一品牌。后工作于上海阿里巴巴数据中心任事业部经理，上海地区阿里巴巴B2C平台TOP卖家视觉策划执行。
-                    2015年-至今，创始新媒体软时尚公众号，细分领域粉丝人群7W。
+            <div class="memberDetailDiv" style=" width: 13%; height: 13%; position: absolute;left: 35%; ">
+                <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>暖暖</b></div>
+                <span style="color: white;word-wrap: break-word;font-size:20px">
+                   摄影对我来说，就像是一扇通往无限可能的窗户。从按下快门的那一刻起，我便开始了一场与时间和空间的对话。我专注于人像摄影，善于捕捉人物最真实、最动人的瞬间，展现他们的个性与魅力。我注重细节，追求完美的构图和独特的视角，以确保每一次拍摄都是一次独特的创作。无论是时尚的大片还是温馨的家庭写真，我都能以专业的技术和敏锐的洞察力，为您留下珍贵的回忆。选择我作为您的摄影师，让我们一起用影像书写属于您的精彩篇章！
                 </span>
-                <img style="width: 200px; height: 440px;   margin-bottom: 20px;" src="@/assets/member/nuan.jpg" />
+                <img style="width: 100%; height: 100%;  margin-bottom: 20px;" src="@/assets/about/nuan.jpg" />
             </div>
-            <div class="memberDetailDiv" style=" width: 200px; height: 440px;  position: absolute;left: 52%; ">
-                <img style="width: 200px; height: 440px;   margin-bottom: 20px;" src="@/assets/member/tzb.jpg" />
-                <div style="color: white;text-align: center;height: 24px;width: 200px;"><b>特种兵</b></div>
-                <span style="color: white;word-wrap: break-word;width: 200px; height: 440px;">
-                    曾工作于上海橡菲贸易有限公司，任产品研发中心负责人，全网电商皮衣第一品牌。后工作于上海阿里巴巴数据中心任事业部经理，上海地区阿里巴巴B2C平台TOP卖家视觉策划执行。
-                    2015年-至今，创始新媒体软时尚公众号，细分领域粉丝人群7W。
+            <div class="memberDetailDiv" style=" width: 13%; height: 13%;  position: absolute;left: 52%; ">
+                <img style="width: 100%; height: 100%;  margin-bottom: 20px;" src="@/assets/about/tzb.jpg" />
+                <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>特种兵</b></div>
+                <span style="color: white;word-wrap: break-word;font-size:20px">
+                    是一位痴迷于摄影的探索者。我对摄影的热爱源于对生活中美好事物的敏锐感知。我擅长风景摄影，喜欢追逐日出日落的绚烂色彩，沉醉于山川湖泊的宁静壮美。我善于运用不同的拍摄技巧和后期处理方法，将大自然的魅力展现得淋漓尽致。同时，我也热衷于街头摄影，捕捉城市中那些稍纵即逝的瞬间，展现生活的百态。我相信，每一张照片都是时光的标本，记录着那一刻的永恒。让我用镜头为您定格那些珍贵的瞬间，留下难忘的影像记忆。
                 </span>
             </div>
-            <div class="memberDetailDiv" style=" width: 200px; height: 440px;  position: absolute;left: 70%; ">
-                <div style="color: white;text-align: center;height: 24px;width: 200px;"><b>毕</b></div>
-                <span style="color: white;word-wrap: break-word;width: 200px; height: 440px;">
-                    曾工作于上海橡菲贸易有限公司，任产品研发中心负责人，全网电商皮衣第一品牌。后工作于上海阿里巴巴数据中心任事业部经理，上海地区阿里巴巴B2C平台TOP卖家视觉策划执行。
-                    2015年-至今，创始新媒体软时尚公众号，细分领域粉丝人群7W。
+            <div class="memberDetailDiv" style=" width: 13%; height: 13%;  position: absolute;left: 70%; ">
+                <div style="color: white;text-align: center;font-weight: 500;font-size: 25px;height: 35px;"><b>毕</b></div>
+                <span style="color: white;word-wrap: break-word;font-size:20px">
+                   摄影是我生命中不可或缺的一部分，它是我表达自我、分享美的方式。我在摄影领域已经深耕了[X]年，积累了丰富的实战经验和独特的艺术见解。我不仅擅长传统的摄影手法，还勇于尝试创新的拍摄技术和理念。无论是商业摄影还是艺术摄影，我都能精准把握客户需求，用镜头语言传达出最深刻的内涵。我热衷于挑战自我，不断突破摄影的边界，为每一个项目带来全新的视觉体验。期待与您携手，共同创造令人惊叹的视觉盛宴！
                 </span>
-                <img style="width: 200px; height: 440px;   margin-bottom: 20px;"
-                    src="http://hkwba5f82.pic17.websiteonline.cn/upload/2.jpg" />
+                <img style="width: 100%; height: 100%;   margin-bottom: 20px;"
+                    src="@/assets/about/bi.jpg" />
 
             </div>
         </div>
@@ -76,16 +72,16 @@
 
         <div class="caseTitle">
             <p class="company_name">EQUIPMENT</p>
-            <h1 class="company_name">设备器材</h1>
+            <h1 class="company_name">工作花絮</h1>
         </div>
 
-        <div class="caseContent">
+        <div class="caseContent" style="clear:both"> 
             <!--照片-->
             <div id="image">
-                <template v-for="item in photoArray">
-                    <div style="float: left;">
+                <template v-for="item in photoArray" :key="item">
+                    <div style="float: left;width:33%">
                         <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-                            style="float: left; width: 619px;     height: 400px; margin-bottom: 20px;" />
+                            style=" width: 100%;height: 600px; margin-bottom: 20px;" />
                         <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
                     </div>
                 </template>
@@ -128,12 +124,24 @@ export default defineComponent({
                     photoShowList.photoArray.push(obj)
                 }
 
-                addPhotoList({url:require("@/assets/sb.jpg"),msg:"SONY ZV-E1 LAUNCH FILM"})
-                addPhotoList({url:require("@/assets/sb.jpg"),msg:"SONY ZV-E1 LAUNCH FILM"})
-                addPhotoList({url:require("@/assets/sb.jpg"),msg:"SONY ZV-E1 LAUNCH FILM"})
-                addPhotoList({url:require("@/assets/sb.jpg"),msg:"SONY ZV-E1 LAUNCH FILM"})
-                addPhotoList({url:require("@/assets/sb.jpg"),msg:"SONY ZV-E1 LAUNCH FILM"})
-                addPhotoList({url:require("@/assets/sb.jpg"),msg:"SONY ZV-E1 LAUNCH FILM"})
+                addPhotoList({url:require("@/assets/about/hx.jpg")})
+                addPhotoList({url:require("@/assets/about/hx1.jpg")})
+                addPhotoList({url:require("@/assets/about/hx2.jpg")})
+                addPhotoList({url:require("@/assets/about/hx3.jpg")})
+                 addPhotoList({url:require("@/assets/about/hx4.jpg")})
+                addPhotoList({url:require("@/assets/about/hx5.jpg")})
+                addPhotoList({url:require("@/assets/about/hx6.jpg")})
+                addPhotoList({url:require("@/assets/about/hx7.jpg")})
+                 addPhotoList({url:require("@/assets/about/hx8.jpg")})
+                addPhotoList({url:require("@/assets/about/hx9.jpg")})
+                addPhotoList({url:require("@/assets/about/hx10.jpg")})
+                addPhotoList({url:require("@/assets/about/hx11.jpg")})
+                 addPhotoList({url:require("@/assets/about/hx12.jpg")})
+                addPhotoList({url:require("@/assets/about/hx13.jpg")})
+                addPhotoList({url:require("@/assets/about/hx14.jpg")})
+                addPhotoList({url:require("@/assets/about/hx15.jpg")})
+                addPhotoList({url:require("@/assets/about/hx16.jpg")})
+                addPhotoList({url:require("@/assets/about/hx17.jpg")})
 
     const getOnclick = () => {
         const image = document.getElementById('image');
@@ -185,7 +193,7 @@ export default defineComponent({
     z-index: 4;
     width: 90%;
     left: 5%;
-    top: 433px;
+    top: 450px;
     color: white;
     padding-top: 45px;
 }
