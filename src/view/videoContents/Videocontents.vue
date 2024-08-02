@@ -6,7 +6,7 @@
       <template v-for="item in photoArray" :key="item">
         <div style="float: left;width:32%;">
           <img :src="item.imgUrl" alt="" @click="getOnclick(item)"
-            style=" width: 600px; height: 300px; margin-bottom: 20px;" v-if="!item.visible" />
+            style=" width: 100%; height: 300px; margin-bottom: 20px;" v-if="!item.visible" />
            
           <video :id="item.id" class="video-js" v-if="item.visible" style="object-fit: cover; width: 100%; height: 300px; margin-bottom: 20px;" :style="vidoeStyle"></video>
           <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
@@ -70,7 +70,7 @@ addPhotoList({videoUrl: require("@/assets/videoContents/video13.mp4"), imgUrl: r
 
     const getOnclick = (item:any) => {
 
-           vidoeStyle.value.width='600px'
+           vidoeStyle.value.width='100%'
            vidoeStyle.value.height='300px'
 
            item.visible = true;
