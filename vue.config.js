@@ -9,7 +9,7 @@ module.exports = defineConfig({
     },
   },
   outputDir: 'docs',
-  publicPath: '/photography-ui/',
+  publicPath: '/',
   css: {
     loaderOptions: {
       less: {
