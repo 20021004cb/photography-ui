@@ -8,7 +8,7 @@ module.exports = defineConfig({
       entry: "src/main.ts",
     },
   },
-  outputDir: 'docs',
+  outputDir: 'ZeroCuriosity',
   publicPath: '/',
   css: {
     loaderOptions: {
