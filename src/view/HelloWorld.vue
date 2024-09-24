@@ -29,24 +29,24 @@
       <!--详情展示三个-->
       <div class="oneVideoShowDiv">
         <img
-          src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg" />
+          src="@/assets/partnerImage.jpg" style="height: 200px; width: 318px;"/>
         <h2 style="margin-top: 30px;">合作与案例</h2>
         <span style="font-family: cursive; font-size: 18px;">
           合作伙伴:受保时捷、支付宝、乔尔卢布松、艺术家陈世英、 中国国际进口博览会、上海海关、上海交通大学等
           <br> <br>
-          合作品牌:迪士尼、天然百利、瑞星时光汽车之家、金杜律所、nebulyft《SHIMO》《小资CHIC》等
+          合作品牌:迪士尼、天然百利、瑞星时光汽车之家、金杜律所等
         </span>
       </div>
       <div class="twoVideoShowDiv">
         <img
           src="@/assets/companyLogo.png" style="height: 200px;"/>
         <h2 style="margin-top: 30px;">上海零点好奇影视有限公司</h2>
-        <span style="font-family: cursive; font-size: 18px;">
+        <span style="font-family: cursive; font-size: 20px;">
           成立时间: 2022年
           <br> <br>
-          业务范围: 涵盖网络剧制作、广告片制作<br>公司年会拍摄，视频拍摄，企业宣传片拍摄<br>照片直播，视频直播，会议拍摄剪辑等多个领域
+          业务范围: 涵盖网络剧制作、广告片制作<br>公司年会拍摄，视频拍摄，企业宣传片拍摄<br>照片直播，视频直播，会议拍摄剪辑等
           <br> <br>
-          核心团队:拥有专业的导演、编剧、摄影师等,<br>为高质量的影视作品提供保障
+          核心团队:拥有专业的导演、编剧、摄影师,<br>为高质量的影视作品提供保障
         </span>
       </div>
       <div class="threeVideoShowDiv">
