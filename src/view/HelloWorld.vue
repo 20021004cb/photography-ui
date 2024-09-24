@@ -1,13 +1,12 @@
 <template>
   <headIndex></headIndex>
   <div class="infoDiv">
-    <!-- <h1>PERSONAL PHOTOGRAPHER</h1> -->
     <h2 class="company_name" style="
         font-family: KaiTi_GB2312;
         color: rgb(255, 255, 255);
         font-size: 42px;
       ">
-      上海零点好奇有限责任公司
+      上海零点好奇影视有限公司
     </h2>
     <p class="company_name" style="font-family: 微软雅黑; font-size: 14px">
       --联系电话：17502181757
@@ -16,83 +15,45 @@
       --微信QQ：17502181757,2649702175
     </p>
   </div>
-  <!-- <a-carousel autoplay>
-    <div>
-      <img class="myImage" src="http://hkwba5f82.pic17.websiteonline.cn/upload/91ck.jpg" />
-    </div>
-    <div>
-      <img src="http://hkwba5f82.pic17.websiteonline.cn/upload/IMG_1818.JPG" />
-    </div>
-    <div>
-      <img src="http://hkwba5f82.pic17.websiteonline.cn/upload/dfe3.jpg" />
-    </div>
-    <div>
-      <img src="http://hkwba5f82.pic17.websiteonline.cn/upload/1_15_003.jpg" />
-    </div>
-  </a-carousel> -->
-
   <!--视频-->
   <div class="caseVideo">
-    <!-- <div class="caseTitle">
-        <p>CAMERA GAGS CASE</p>
-        <h1>摄像花絮</h1>
-        <a href="">
-          <span class="caseTitle-a-span">点击查看 所有案例分类</span>
-        </a>
-      </div> -->
     <video ref="videoPlayer" @click="clickVideo" class="video-js"
       style="height: 100%; width: 100%; object-fit: cover"></video>
   </div>
 
   <!--视频作品集-->
   <div class="videoShowDiv">
-    <!-- <div style="color: white; margin-top: 35px">
-        <h1 style="
-            font-size: 45px;
-            text-align: center;
-            font-family: cormorantgaramond-semibold, cormorantgaramond,
-              cormorant garamond, serif;
-          ">
-          DISCOVER
-        </h1>
-        <p style="
-            font-size: 12px;
-            color: inherit;
-            line-height: 1.5em;
-            text-align: center;
-          ">
-          my collection of edited works and other exclusive content
-        </p>
-      </div> -->
 
     <div class="VideoBigDiv">
-
 
       <!--详情展示三个-->
       <div class="oneVideoShowDiv">
         <img
           src="https://static.wixstatic.com/media/b6108b_100e790ff2674c1b8b6ca18b85f5a13b~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/ALL%20A1-2_edited.jpg" />
-        <h2 style="margin-top: 30px;">Zero Curiosity, Peak Vision</h2>
-        <span>Zero Curiosity, Infinite Wonder - Shanghai Zero Curiosity Film and Television Co., Ltd</span>
-        <h2 style="margin-top: 30px;">零点探秘</h2>
+        <h2 style="margin-top: 30px;">合作与案例</h2>
+        <span style="font-family: cursive; font-size: 18px;">
+          合作伙伴:受保时捷、支付宝、乔尔卢布松、艺术家陈世英、 中国国际进口博览会、上海海关、上海交通大学等
+          <br> <br>
+          合作品牌:迪士尼、天然百利、瑞星时光汽车之家、金杜律所、nebulyft《SHIMO》《小资CHIC》等
+        </span>
       </div>
       <div class="twoVideoShowDiv">
         <img
-          src="https://static.wixstatic.com/media/b6108b_4057e259eac04ba8a3ad510b02c55a86~mv2.jpeg/v1/crop/x_17,y_68,w_3199,h_1834/fill/w_374,h_216,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/Screenshot%202024-06-28%20at%2014_14_39.jpeg" />
-        <h2 style="margin-top: 30px;">Infinite Curiosity, Zero Limits</h2>
-        <span>
-          Unveiling Wonders at Zero Hour with Shanghai Zero Curiosity Film and Television
+          src="@/assets/companyLogo.png" style="height: 200px;"/>
+        <h2 style="margin-top: 30px;">上海零点好奇影视有限公司</h2>
+        <span style="font-family: cursive; font-size: 18px;">
+          成立时间: 2022年
           <br> <br>
-         Embark on a Cinematic Odyssey with Shanghai Zero Curiosity Film, where every frame ignites your imagination and takes you to uncharted territories of entertainment.
+          业务范围: 涵盖网络剧制作、广告片制作<br>公司年会拍摄，视频拍摄，企业宣传片拍摄<br>照片直播，视频直播，会议拍摄剪辑等多个领域
+          <br> <br>
+          核心团队:拥有专业的导演、编剧、摄影师等,<br>为高质量的影视作品提供保障
         </span>
-           <h2 style="margin-top: 30px;">好奇追影</h2>
       </div>
       <div class="threeVideoShowDiv">
         <img
-          src="https://static.wixstatic.com/media/b6108b_3a93f0e7cc4c4f9d8b680b3cdfed309f~mv2.jpg/v1/fill/w_312,h_183,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/EYE%20-%20iPhone.jpg" />
-        <h2 style="margin-top: 30px;">Curiosity Starts at Zero</h2>
-        <span>Shanghai Zero Curiosity Film and Television: Where Curiosity Sparks Extraordinary Stories</span>
-           <h2 style="margin-top: 30px;">零点寻奇</h2>
+          src="@/assets/about/hx16.jpg" style="height: 200px; width: 315px;"/>
+        <h2 style="margin-top: 30px;">团队风采</h2>
+        <span style="font-family: cursive; font-size: 18px;">上海零点好奇影视有限公司的团队，是一支由行业精英组成的梦幻之队！以无限的热情和执着，推动着每一个项目的前进，以其强大的统筹能力和商业头脑，确保项目的顺利进行</span>
       </div>
     </div>
   </div>
@@ -109,44 +70,44 @@
     </div>
     <div class="caseContent">
       <div style="margin-bottom: 20px;">
-        <!-- <img src="@/assets/index/food.png" style="width: 42px;height: 42px;" /> -->
-        <span style=" color: white; font-size: 35px;margin-left: 20px;position: relative;bottom: -12px;font-weight: 500;font-family: -apple-system-caption1; ">菜品系列</span>
+        <span
+          style=" color: white; font-size: 35px;margin-left: 20px;position: relative;bottom: -12px;font-weight: 500;font-family: -apple-system-caption1; ">菜品系列</span>
       </div>
-          <!--照片-->
+      <!--照片-->
       <div id="image">
         <template v-for="item in photoArray" :key="item.url">
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-                style="width: 100%;  margin-bottom: 20px;"/>
+              style="width: 100%;  margin-bottom: 20px;" />
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
       </div>
       <div style="padding-top: 30px;padding-bottom: 20px;clear:both">
-        <!-- <img src="@/assets/index/people.png" style="width: 42px;height: 42px;" /> -->
-        <span style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">人像系列</span>
+        <span
+          style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">人像系列</span>
       </div>
       <!--照片-->
       <div id="image">
-        <template v-for="item in peopleArray" :key="item.url" >
+        <template v-for="item in peopleArray" :key="item.url">
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-              style="width: 700px;  margin-bottom: 20px;" />
+              style="width: 100%;  margin-bottom: 20px;" />
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
       </div>
 
-<div style="padding-top: 30px;padding-bottom: 20px;clear:both">
-        <!-- <img src="@/assets/index/people.png" style="width: 42px;height: 42px;" /> -->
-        <span style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">化妆品系列</span>
+      <div style="padding-top: 30px;padding-bottom: 20px;clear:both">
+        <span
+          style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">化妆品系列</span>
       </div>
       <!--照片-->
       <div id="image">
-        <template v-for="item in hzpArray" :key="item.url" >
+        <template v-for="item in hzpArray" :key="item.url">
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
-              style="width: 700px;  margin-bottom: 20px;" />
+              style="width: 100%;  margin-bottom: 20px;" />
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
@@ -166,10 +127,12 @@
         <ul class="ulDomUl" ref="ulDom" @mouseenter="pause" @mouseleave="resume">
           <li class="ulDomLi">
             <img src="@/assets/partner/bydlogo.png" style="margin-right:60px" />
-            <img src="@/assets/partner/zfb.png" style="margin-right:60px"  />
+            <img src="@/assets/partner/zfb.png" style="margin-right:60px" />
             <img src="@/assets/partner/aodi.png" style="margin-right:60px" />
-            <img src="@/assets/partner/benchi.png" style="margin-right:60px"  />
-            <img src="@/assets/bsj.png" style="margin-right:60px" />
+            <img src="@/assets/partner/benchi.png" style="margin-right:60px" />
+            <img src="@/assets/partner/hanting.png" style="margin-right:60px" />
+            <img src="@/assets/partner/bylogo.png" style="margin-right:60px" />
+            <img src="@/assets/partner/xbk.png" style="margin-right:60px" />
           </li>
         </ul>
       </div>
@@ -227,7 +190,7 @@ export default defineComponent({
     addPeopleList({ url: require("@/assets/index/people4.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
     addPeopleList({ url: require("@/assets/index/people5.jpg"), msg: "SONY A7-M4 LAUNCH FILM" })
 
-//化妆品系列
+    //化妆品系列
     const hzpShowList = reactive({
       hzpArray: []
     })
@@ -322,9 +285,9 @@ export default defineComponent({
       animation,
       getOnclick,
       ...toRefs(photoShowList),
-        ...toRefs(peopleShowList),
-          ...toRefs(hzpShowList),
-      
+      ...toRefs(peopleShowList),
+      ...toRefs(hzpShowList),
+
       clickVideo
     };
   },
@@ -367,17 +330,20 @@ export default defineComponent({
   width: 200%;
   height: 100%;
 }
-ulDomUl>li{
- width: 1050px;
-    height: 100%;
-    float: left;
-    list-style: none;
-    display: flex;
+
+ulDomUl>li {
+  width: 1050px;
+  height: 100%;
+  float: left;
+  list-style: none;
+  display: flex;
 
 }
-ulDomUl>li>img{
-      margin-right: 70px;
+
+ulDomUl>li>img {
+  margin-right: 70px;
 }
+
 .twoVideoShowDiv {
   color: white;
   background-color: rgb(14 35 45);
@@ -613,59 +579,3 @@ ulDomUl>li>img{
   -moz-animation-fill-mode: forwards;
 }
 </style>
-<!-- <style scoped lang="scss">
-$x: 10;
-/*  number of row */
-$y: 10;
-/*  number of columns */
-$s: 0.8;
-/* speed factor */
-
-@for $i from 0 through ($x - 1) {
-  @for $j from 0 through ($y - 1) {
-    @property --c-#{$i}-#{$j} {
-      syntax: "<number>";
-      initial-value: 1;
-      inherits: false;
-    }
-  }
-}
-
-@function transition($i, $j) {
-  @return ($s*random())+s ($s*random())+s;
-}
-
-@mixin image() {
-  $all_t: (
-  );
-$all_m: (
-);
-
-@for $i from 0 through ($x - 1) {
-  @for $j from 0 through ($y - 1) {
-    $all_t: append($all_t, --c-#{$i}-#{$j} transition($i, $j), comma);
-    $all_m: append($all_m, linear-gradient(rgba(0, 0, 0, var(--c-#{$i}-#{$j})) 0 0) calc(#{$i}*100%/(#{$x} - 1)) calc(#{$j}*100%/(#{$y} - 1)), comma);
-  }
-}
-
-transition: $all_t;
--webkit-mask: $all_m;
-mask: $all_m;
-}
-
-img {
-  @include image();
-  -webkit-mask-size:calc(100%/#{$x}) calc(100%/#{$y});
-  -webkit-mask-repeat: no-repeat;
-  mask-size:calc(100%/#{$x}) calc(100%/#{$y});
-  mask-repeat: no-repeat;
-}
-
-img:hover {
-  @for $i from 0 through ($x - 1) {
-    @for $j from 0 through ($y - 1) {
-      --c-#{$i}-#{$j}: 0.7;
-    }
-  }
-}
-</style> -->

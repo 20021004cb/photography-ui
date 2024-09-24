@@ -30,9 +30,9 @@
       </div>
       <div style="margin-top: 24px">
         <p>
-          Copyright © 2009 - 2017 Cld , All Rights Reserved
-          版权信息：上海零点好奇有限责任公司
+          COPYRIGHT(©) 上海零点好奇影视有限公司
         </p>
+        <p style="font-size: 12px;">沪ICP备XXX号  京公网安备XXX号</p>
       </div>
     </div>
 </template>
