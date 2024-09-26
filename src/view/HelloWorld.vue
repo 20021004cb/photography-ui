@@ -32,7 +32,7 @@
           src="@/assets/partnerImage.jpg" style="height: 200px; width: 318px;"/>
         <h2 style="margin-top: 30px;">合作与案例</h2>
         <span style="font-family: cursive; font-size: 18px;">
-          合作伙伴:受保时捷、支付宝、乔尔卢布松、艺术家陈世英、 中国国际进口博览会、上海海关、上海交通大学等
+          合作伙伴:受保时捷、支付宝、乔尔卢布松、艺术家陈世英、中国国际进口博览会、上海海关、上海交通大学等
           <br> <br>
           合作品牌:迪士尼、天然百利、瑞星时光汽车之家、金杜律所等
         </span>

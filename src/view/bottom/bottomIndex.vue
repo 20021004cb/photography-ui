@@ -32,7 +32,7 @@
         <p>
           COPYRIGHT(©) 上海零点好奇影视有限公司
         </p>
-        <p style="font-size: 12px;">沪ICP备XXX号  京公网安备XXX号</p>
+        <p style="font-size: 12px;">沪ICP备2024096242号-1</p>
       </div>
     </div>
 </template>
