@@ -32,7 +32,7 @@
         <p>
           COPYRIGHT(©) 上海零点好奇影视有限公司
         </p>
-        <p style="font-size: 12px;">沪ICP备2024096242号-1</p>
+        <a href="https://beian.miit.gov.cn/" target="_blank"  style="font-size: 12px;color: #888;">沪ICP备2024096242号</a>
       </div>
     </div>
 </template>
