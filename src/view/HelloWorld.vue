@@ -9,7 +9,7 @@
       上海零点好奇影视有限公司
     </h2>
     <p class="company_name" style="font-family: 微软雅黑; font-size: 14px">
-      --联系电话：17502181757
+      --联系电话：17502181757,15301909715
     </p>
     <p class="company_name" style="font-family: 微软雅黑; font-size: 14px">
       --微信QQ：17502181757,2649702175
@@ -22,41 +22,7 @@
   </div>
 
   <!--视频作品集-->
-  <div class="videoShowDiv">
-
-    <div class="VideoBigDiv">
-
-      <!--详情展示三个-->
-      <div class="oneVideoShowDiv">
-        <img
-          src="@/assets/partnerImage.jpg" style="height: 200px; width: 318px;"/>
-        <h2 style="margin-top: 30px;">合作与案例</h2>
-        <span style="font-family: cursive; font-size: 18px;">
-          合作伙伴:受保时捷、支付宝、乔尔卢布松、艺术家陈世英、中国国际进口博览会、上海海关、上海交通大学等
-          <br> <br>
-          合作品牌:迪士尼、天然百利、瑞星时光汽车之家、金杜律所等
-        </span>
-      </div>
-      <div class="twoVideoShowDiv">
-        <img
-          src="@/assets/companyLogo.png" style="height: 200px;"/>
-        <h2 style="margin-top: 30px;">上海零点好奇影视有限公司</h2>
-        <span style="font-family: cursive; font-size: 20px;">
-          成立时间: 2022年
-          <br> <br>
-          业务范围: 涵盖网络剧制作、广告片制作<br>公司年会拍摄，视频拍摄，企业宣传片拍摄<br>照片直播，视频直播，会议拍摄剪辑等
-          <br> <br>
-          核心团队:拥有专业的导演、编剧、摄影师,<br>为高质量的影视作品提供保障
-        </span>
-      </div>
-      <div class="threeVideoShowDiv">
-        <img
-          src="@/assets/about/hx16.jpg" style="height: 200px; width: 315px;"/>
-        <h2 style="margin-top: 30px;">团队风采</h2>
-        <span style="font-family: cursive; font-size: 18px;">上海零点好奇影视有限公司的团队，是一支由行业精英组成的梦幻之队！以无限的热情和执着，推动着每一个项目的前进，以其强大的统筹能力和商业头脑，确保项目的顺利进行</span>
-      </div>
-    </div>
-  </div>
+  
 
   <!--案例展示-->
   <div class="caseDiv">

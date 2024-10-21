@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div class="caseTitle">
+        <!-- <div class="caseTitle">
             <p class="company_name">TEAM</p>
             <h1 class="company_name">公司摄影师成员</h1>
         </div>
@@ -67,7 +67,7 @@
                     src="@/assets/about/bi.jpg" />
 
             </div>
-        </div>
+        </div> -->
 
 
         <div class="caseTitle">
