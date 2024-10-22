@@ -24,7 +24,7 @@
         </div>
         <div>
             <img class="aboutImg" v-on:mousemove="mouseOverHandler" v-on:mouseleave="mouseLeaveHandler"
-                src="http://hkwba5f82.pic17.websiteonline.cn/upload/@@@231321312-1024x361.jpg" />
+                src="@/assets/about/about2.jpg" />
             <div id="imgMsg">
                 <h4>上海零点好奇影视有限公司-商业广告摄影、产品拍摄、家电拍摄、化妆品拍摄、商业摄影、五金拍摄</h4>
                 <p>箱包拍摄、工业产品拍摄、手表拍摄、卫浴拍摄、酒类拍摄、饮料拍摄、数码拍摄等</p>
