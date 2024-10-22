@@ -64,12 +64,12 @@
         </template>
       </div>
 
-      <div style="padding-top: 30px;padding-bottom: 20px;clear:both">
+      <!-- <div style="padding-top: 30px;padding-bottom: 20px;clear:both">
         <span
           style=" color: white; font-size: 35px;margin-left: 20px;position: relative; bottom: -12px;font-weight: 500;font-family: -apple-system-caption1;">化妆品系列</span>
-      </div>
+      </div> -->
       <!--照片-->
-      <div id="image">
+      <!-- <div id="image">
         <template v-for="item in hzpArray" :key="item.url">
           <div class="imageDiv">
             <img :src="item.url" alt="" @click="getOnclick" :data-original="`${item}`"
@@ -77,7 +77,7 @@
             <span style="color: white;display: block;margin-bottom: 20px;">{{ item.msg }}</span>
           </div>
         </template>
-      </div>
+      </div> -->
 
     </div>
   </div>
