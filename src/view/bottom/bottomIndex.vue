@@ -60,6 +60,7 @@ export default defineComponent({
   font-variant-ligatures: normal;
   font-variant-caps: normal;
   font-weight: normal;
+  z-index: 1;
 }
 
 .icons-list {

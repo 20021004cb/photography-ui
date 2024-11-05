@@ -1,4 +1,5 @@
 <template>
+  
   <headIndex></headIndex>
   <div class="infoDiv">
     <h2 class="company_name" style="
@@ -116,16 +117,16 @@ import headIndex from "@/view/head/index.vue"
 import bottomIndex from "@/view/bottom/bottomIndex.vue"
 import Viewer from 'viewerjs'
 import 'viewerjs/dist/viewer.css'
-
+import canvasCss from '@/view/canvas.vue'
 export default defineComponent({
   name: "HelloWorld",
-  components: { headIndex, bottomIndex },
+  components: { headIndex, bottomIndex,canvasCss },
   setup() {
 
     const videoPlayer = ref(null);
     const myPlayer = ref(null);
 
-    const ulDom = ref(null);
+    const ulDom = ref();
     let animationId = null;
     let isPaused = false;
     //菜品系列
@@ -263,10 +264,15 @@ export default defineComponent({
 .imageDiv {
   float: left;
   width: 33%;
+  position: relative;
+  z-index: 1;
   /* max-width: 619px; */
   /* 最大宽度限制 */
 }
-
+.imageDiv:hover{
+  -webkit-transform: scale(1);
+  transform: scale(1.01);
+}
 .VideoBigDiv {
   position: relative;
   width: 800px;
@@ -415,6 +421,8 @@ ulDomUl>li>img {
   line-height: 40px;
   text-decoration: none;
   font-family: 微软雅黑;
+  position: relative;
+  z-index: 1;
 }
 
 .caseTitle-a-span {
@@ -439,6 +447,7 @@ ulDomUl>li>img {
   height: 700px;
   width: 100%;
   background-color: black;
+  z-index: 1;
 }
 
 .videoShowDiv {
@@ -543,5 +552,10 @@ ulDomUl>li>img {
   -o-animation-fill-mode: forwards;
   -ms-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
+}
+.company_name:hover{
+  text-shadow: 0 0 20px #fff;
+  -webkit-transform: scale(4);
+  transform: scale(1.1);
 }
 </style>

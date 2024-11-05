@@ -43,10 +43,15 @@ export default defineComponent({
 .custom-link{
   text-decoration: none;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .custom-link:hover{
   color: rgb(224, 193, 193);
+  text-shadow: 0 0 20px #fff;
+  -webkit-transform: scale(4);
+  transform: scale(1.1);
 }
 
 </style>
